@@ -302,7 +302,15 @@ class Changelog
 
             // Group all changes to lists by type
             $types = $this->config->getAllowedTypes();
+            $ignoredTypes = $this->config->getIgnoreTypes();
+            $allTypes = $types + $ignoredTypes;
             foreach ($commits as $commit) {
+                if (!in_array($commit->getType(), $allTypes)) {
+                    if(empty($commit->getScope())) {
+                        $commit->setScope(trim($commit->getType(), '#'));
+                    }
+                    $commit->setType('feat');
+                }
                 if (in_array($commit->getType(), $types) || $commit->isBreakingChange()) {
                     $itemKey = $this->getItemKey($commit->getDescription());
                     $breakingChanges = $commit->getBreakingChanges();
