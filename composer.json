@@ -1,5 +1,5 @@
 {
-    "name": "marcocesarato/php-conventional-changelog",
+    "name": "carstep/php-conventional-changelog",
     "description": "Generate changelogs and release notes from a project's commit messages and metadata and automate versioning with semver.org and conventionalcommits.org",
     "version": "1.10.7",
     "type": "library",
