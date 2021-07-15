@@ -14,7 +14,7 @@ class ConventionalCommit extends Commit
     /**
      * @var string
      */
-    protected const PATTERN_HEADER = "/^(?<type>[a-z]+)(?<breaking_before>[!]?)(\((?<scope>.+)\))?(?<breaking_after>[!]?)[:][[:blank:]](?<description>.+)/iums";
+    protected const PATTERN_HEADER = "/^(?<type>[a-z]+)(?<breaking_before>[!]?)([\(\[](?<scope>.+)[\)\]])?(?<breaking_after>[!]?)[:][[:blank:]](?<description>.+)/iums";
 
     /**
      * Type.
