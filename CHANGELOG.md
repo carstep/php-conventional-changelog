@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [1.11.0](https://github.com/carstep/php-conventional-changelog/compare/v1.10.9...v1.11.0) (2021-07-15)
+
+
+### Features
+
+* None conventional commits of #scope scope is supported, with auto feat type ([ae603f](https://github.com/carstep/php-conventional-changelog/commit/ae603fbafb17caa1cc19609e02bcb16686988351))
+
+---
+
 ## [1.10.7](https://github.com/marcocesarato/php-conventional-changelog/compare/v1.10.6...v1.10.7) (2021-05-15)
 
 
